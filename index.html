@@ -104,14 +104,12 @@
                     <h3 class="text-dark text-2xl md:text-3xl font-bold mb-6 text-center">
                         <span class="text-secondary">Preencha o formulário</span> e solicite sua cotação personalizada!
                     </h3>
-                    <form name="cotacao-iaconvert" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-5">
+                    <!-- Alteração: data-netlify="true" para netlify -->
+                    <form name="cotacao-iaconvert" method="POST" netlify netlify-honeypot="bot-field" class="space-y-5">
                         <!-- Campo hidden para honeypot (anti-spam do Netlify Forms) -->
                         <p class="hidden">
                             <label>Não preencha isso: <input name="bot-field" /></label>
                         </p>
-                        <!-- Netlify Forms pode redirecionar para uma página de sucesso. 
-                             Se não especificado, ele mostrará uma mensagem padrão de sucesso.
-                             Se quiser uma página customizada, adicione action="/sucesso" e crie um arquivo sucesso.html -->
                         
                         <div>
                             <label for="nome" class="block text-dark text-sm font-semibold mb-2">Nome Completo:</label>
