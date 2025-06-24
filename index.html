@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão em IA para Empresas - iaconvert: Treinamento Presencial Exclusivo</title>
+    <meta name="description" content="Capacite sua equipe com a iaconvert: treinamento de imersão presencial em IA, focado em resultados reais para sua empresa. Desbloqueie o potencial da Inteligência Artificial.">
+
+    <!-- Favicon - Substitua pela URL do seu favicon -->
+    <link rel="shortcut icon" href="https://placehold.co/32x32?text=AI" type="image/x-icon">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome CDN para ícones (LinkedIn, Facebook, Instagram) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0x30z/IKIE/CzVXj/fHhhp4sI6iR0v3GjP+bI52j7J5C+e40+fL9j1Z/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Configuração do Tailwind para usar a fonte Inter */
+        html {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Variáveis CSS para suas cores da iaconvert (ajuste estas cores para a sua marca) */
+        :root {
+            --primary-color: #007BFF; /* Azul iaconvert */
+            --secondary-color: #28A745; /* Verde para CTA/destaque */
+            --dark-bg: #1a1a2e; /* Fundo escuro profundo */
+            --light-text: #F8F8F8;
+            --dark-text: #222222;
+            --highlight-text: #00C2FF; /* Um azul mais claro para destaques de texto */
+        }
+
+        .text-primary { color: var(--primary-color); }
+        .bg-primary { background-color: var(--primary-color); }
+        .text-secondary { color: var(--secondary-color); }
+        .bg-secondary { background-color: var(--secondary-color); }
+        .bg-dark-bg { background-color: var(--dark-bg); }
+        .text-light { color: var(--light-text); }
+        .text-dark { color: var(--dark-text); }
+        .text-highlight { color: var(--highlight-text); }
+        
+        /* Ajustes para scrollbar em navegadores Webkit (Chrome, Safari) */
+        .overflow-x-auto::-webkit-scrollbar {
+            height: 8px;
+        }
+        .overflow-x-auto::-webkit-scrollbar-track {
+            background: #2c2c4d; /* Cor da trilha do scroll */
+            border-radius: 10px;
+        }
+        .overflow-x-auto::-webkit-scrollbar-thumb {
+            background: var(--primary-color); /* Cor do "polegar" do scroll */
+            border-radius: 10px;
+        }
+        .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+            background: var(--highlight-text);
+        }
+
+        /* Animação para o spinner de loading */
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin {
+            animation: spin 1s linear infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-dark">
+
+    <!-- Header Section -->
+    <header class="bg-dark-bg py-4 border-b-4 border-primary shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <!-- Substitua esta imagem pelo seu logotipo iaconvert de alta resolução -->
+                <img src="https://placehold.co/180x60/007bff/ffffff?text=iaconvert+Logo" alt="Logotipo iaconvert" class="max-w-[180px] h-auto rounded-lg">
+            </div>
+            <!-- Para uma LP de captação, o menu é geralmente minimalista ou inexistente -->
+            <nav>
+                <a href="#hero-form" class="bg-secondary text-light px-6 py-2 rounded-lg font-bold hover:bg-green-600 transition duration-300 shadow-md">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-cover bg-center text-light py-20 md:py-32 lg:py-40" style="background-image: url('https://images.unsplash.com/photo-1542831371-d10b065f493d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <!-- Overlay escuro para melhorar a leitura do texto -->
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center lg:items-start gap-12">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                        Desbloqueie o Potencial da <span class="text-highlight">Inteligência Artificial</span> na Sua Empresa com a <span class="text-primary">iaconvert</span>.
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up">
+                        <span class="font-semibold text-highlight">Imersão Presencial Exclusiva:</span> Capacite Sua Equipe para a Era da IA e Transforme Seus Negócios.
+                    </p>
+                    <p class="text-md md:text-lg mb-10 max-w-3xl mx-auto lg:mx-0 opacity-90 animate-fade-in-up delay-200">
+                        Em um mundo onde a Inteligência Artificial não é mais o futuro, mas sim o presente, sua equipe não pode ficar para trás. A <span class="font-bold">iaconvert</span> oferece um treinamento de imersão presencial, desenhado sob medida para as necessidades e desafios únicos da sua organização. Esqueça cursos genéricos; nós mergulhamos na sua realidade para entregar conhecimento prático e resultados reais.
+                    </p>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div id="hero-form" class="lg:w-1/2 bg-white bg-opacity-95 p-8 md:p-10 rounded-xl shadow-2xl w-full max-w-lg lg:max-w-md animate-fade-in-right">
+                    <h3 class="text-dark text-2xl md:text-3xl font-bold mb-6 text-center">
+                        <span class="text-secondary">Preencha o formulário</span> e solicite sua cotação personalizada!
+                    </h3>
+                    <form action="#" method="POST" class="space-y-5">
+                        <div>
+                            <label for="nome" class="block text-dark text-sm font-semibold mb-2">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-200 text-dark placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-dark text-sm font-semibold mb-2">E-mail Profissional:</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-200 text-dark placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label for="telefone" class="block text-dark text-sm font-semibold mb-2">Telefone de Contato:</label>
+                            <input type="tel" id="telefone" name="telefone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-200 text-dark placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label for="empresa" class="block text-dark text-sm font-semibold mb-2">Nome da Empresa:</label>
+                            <input type="text" id="empresa" name="empresa" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-200 text-dark placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label for="cargo" class="block text-dark text-sm font-semibold mb-2">Cargo:</label>
+                            <input type="text" id="cargo" name="cargo" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-200 text-dark placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label for="colaboradores" class="block text-dark text-sm font-semibold mb-2">Número aproximado de colaboradores para o treinamento:</label>
+                            <select id="colaboradores" name="colaboradores" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-200 text-dark bg-white">
+                                <option value="">Selecione</option>
+                                <option value="1-5">1-5</option>
+                                <option value="6-15">6-15</option>
+                                <option value="16-30">16-30</option>
+                                <option value="30+">Mais de 30</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="desafios" class="block text-dark text-sm font-semibold mb-2">Quais desafios de IA sua empresa busca resolver? (Opcional)</label>
+                            <textarea id="desafios" name="desafios" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-200 text-dark placeholder-gray-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-secondary text-light py-3 rounded-lg font-bold text-lg hover:bg-green-600 transition duration-300 shadow-lg transform hover:scale-105">
+                            Solicitar Cotação
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="bg-dark-bg py-16 md:py-24 text-light">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center animate-fade-in-up">
+                    Tudo que sua empresa precisa em um só lugar.
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-b-4 border-primary transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-left">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Capacitação In-Company Personalizada</h3>
+                        <p class="text-gray-300">Treinamento direto na sua empresa, focado nos seus dados, processos e objetivos. Sem deslocamentos, sem perda de produtividade.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-b-4 border-primary transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-up delay-100">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Conteúdo sob Medida e Atualizado</h3>
+                        <p class="text-gray-300">Nosso currículo é 100% adaptável. Abordaremos os temas de IA mais relevantes para o seu setor, desde fundamentos até aplicações avançadas.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-b-4 border-primary transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-right delay-200">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Resultados Tangíveis e Imediatos</h3>
+                        <p class="text-gray-300">Sua equipe não apenas aprenderá sobre IA, mas saberá como aplicá-la para otimizar operações, impulsionar a inovação e gerar vantagem competitiva.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-b-4 border-primary transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-left delay-300">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Especialistas Referência no Mercado</h3>
+                        <p class="text-gray-300">Nossos instrutores são profissionais renomados e atuantes no mercado de IA, prontos para compartilhar insights e experiências valiosas.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-b-4 border-primary transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-up delay-400">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Flexibilidade e Conveniência Total</h3>
+                        <p class="text-gray-300">Agendamos a imersão de acordo com a disponibilidade da sua equipe, minimizando interrupções e maximizando o aprendizado.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-b-4 border-primary transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-right delay-500">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Suporte Contínuo Pós-Treinamento</h3>
+                        <p class="text-gray-300">Oferecemos acompanhamento para garantir que o conhecimento seja efetivamente aplicado e traga os resultados esperados para sua organização.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section id="methodology" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 animate-fade-in-left">
+                    <!-- Imagem para a seção de metodologia -->
+                    <img src="https://images.unsplash.com/photo-1620712797745-f09b2e04314c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Metodologia iaconvert - Treinamento de IA" class="rounded-xl shadow-xl w-full h-auto">
+                </div>
+                <div class="lg:w-1/2 text-center lg:text-left animate-fade-in-right">
+                    <h3 class="text-xl font-bold mb-3 text-primary">Metodologia iaconvert</h3>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 text-dark">
+                        A disrupção começa na forma como se <span class="text-primary">aprende!</span>
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Na <span class="font-bold">iaconvert</span>, adotamos uma abordagem prática e dinâmica, onde sua equipe se envolve em <span class="text-highlight">estudos de caso reais</span>, simulações e <span class="text-highlight">resolução de problemas específicos da sua empresa</span>. Nossos treinamentos são desenhados para estimular a autonomia e o protagonismo dos colaboradores, desenvolvendo competências essenciais para a Nova Economia.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Conheça mais sobre nossa metodologia inovadora, que garante um aprendizado imersivo e aplicável desde o primeiro dia!
+                    </p>
+                    <a href="#hero-form" class="bg-primary text-light px-8 py-4 rounded-lg font-bold text-xl hover:bg-blue-700 transition duration-300 shadow-md transform hover:scale-105">
+                        Solicitar Cotação
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LLM Feature Section: AI Course Content Generator -->
+        <section id="ai-course-generator" class="bg-gradient-to-br from-blue-900 to-indigo-900 text-light py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 animate-fade-in-down">
+                    ✨ Gerador de Tópicos de IA Personalizados ✨
+                </h2>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-100">
+                    Curioso(a) para saber como a IA pode transformar sua empresa? Descreva sua indústria e um desafio, e deixe nossa IA sugerir tópicos de treinamento exclusivos para você!
+                </p>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl max-w-2xl mx-auto animate-fade-in-up delay-200">
+                    <div class="space-y-6 text-left mb-8">
+                        <div>
+                            <label for="industry-input" class="block text-primary text-lg font-semibold mb-3">Sua Indústria:</label>
+                            <input type="text" id="industry-input" placeholder="Ex: Varejo, Saúde, Finanças, Manufatura" class="w-full px-5 py-3 rounded-lg bg-gray-700 text-light border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 placeholder-gray-400">
+                        </div>
+                        <div>
+                            <label for="challenge-input" class="block text-primary text-lg font-semibold mb-3">Um Desafio Específico na sua Empresa:</label>
+                            <textarea id="challenge-input" rows="4" placeholder="Ex: Otimizar cadeia de suprimentos, melhorar atendimento ao cliente, automatizar processos financeiros" class="w-full px-5 py-3 rounded-lg bg-gray-700 text-light border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 placeholder-gray-400"></textarea>
+                        </div>
+                    </div>
+                    <button id="generate-topics-btn" class="bg-secondary text-light py-4 px-10 rounded-lg font-bold text-xl hover:bg-green-600 transition duration-300 shadow-lg transform hover:scale-105 flex items-center justify-center w-full">
+                        Gerar Tópicos de Treinamento ✨
+                        <div id="loading-spinner" class="hidden ml-3 border-t-2 border-r-2 border-b-2 border-white rounded-full w-6 h-6 animate-spin"></div>
+                    </button>
+                    <div id="response-container" class="mt-8 p-6 bg-gray-700 rounded-lg border border-primary text-left hidden">
+                        <h4 class="text-primary text-2xl font-bold mb-4">Tópicos Sugeridos:</h4>
+                        <div id="ai-response" class="text-gray-200 leading-relaxed"></div>
+                    </div>
+                     <div id="error-message" class="mt-8 p-4 bg-red-600 text-white rounded-lg text-center hidden">
+                        Houve um erro ao gerar os tópicos. Por favor, tente novamente mais tarde.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements/Authority Section -->
+        <section id="achievements" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-12 text-center text-dark animate-fade-in-up">
+                    Por que apostar na <span class="text-primary">iaconvert</span>?
+                </h2>
+                <p class="text-lg text-gray-700 mb-10 text-center max-w-3xl mx-auto animate-fade-in-up delay-100">
+                    Com anos de experiência e um time de ponta, a iaconvert é sua parceira ideal para levar sua empresa ao próximo nível da Inteligência Artificial.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center transform hover:scale-105 transition duration-300 animate-fade-in-left">
+                        <!-- Imagem para 'Melhores em inovação tecnológica' -->
+                        <img src="https://placehold.co/80x80/007BFF/ffffff?text=Inovação" alt="Ícone de Inovação Tecnológica" class="mb-4 opacity-75 rounded-lg">
+                        <p class="font-bold text-dark text-center text-lg"><span class="text-primary">Líder</span> em inovação tecnológica</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center transform hover:scale-105 transition duration-300 animate-fade-in-up delay-100">
+                        <!-- Imagem para 'Excelência em consultoria de IA' -->
+                        <img src="https://placehold.co/80x80/28A745/ffffff?text=Experiência" alt="Ícone de Experiência" class="mb-4 opacity-75 rounded-lg">
+                        <p class="font-bold text-dark text-center text-lg"><span class="text-primary">10+ anos</span> de excelência em IA</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center transform hover:scale-105 transition duration-300 animate-fade-in-down delay-200">
+                        <!-- Imagem para 'Satisfação dos clientes' -->
+                        <img src="https://placehold.co/80x80/00C2FF/ffffff?text=Satisfação" alt="Ícone de Satisfação do Cliente" class="mb-4 opacity-75 rounded-lg">
+                        <p class="font-bold text-dark text-center text-lg"><span class="text-primary">98%</span> de satisfação dos clientes</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center transform hover:scale-105 transition duration-300 animate-fade-in-right delay-300">
+                        <!-- Imagem para 'Líder em treinamentos' -->
+                        <img src="https://placehold.co/80x80/1a1a2e/ffffff?text=Liderança" alt="Ícone de Liderança em Treinamento" class="mb-4 opacity-75 rounded-lg">
+                        <p class="font-bold text-dark text-center text-lg"><span class="text-primary">Referência</span> em treinamentos In-Company</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="relative bg-cover bg-center text-light py-20 md:py-32" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <!-- Overlay escuro -->
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 animate-fade-in-down">
+                    Investir em pessoas é investir no <span class="text-highlight">sucesso do seu negócio</span>.
+                </h2>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
+                    Destaque sua empresa com os treinamentos corporativos da <span class="font-bold">iaconvert</span>. Junte-se a nós para desenvolver equipes de alta performance e liderar as transformações na nova economia.
+                </p>
+                <a href="#hero-form" class="bg-secondary text-light px-10 py-5 rounded-lg font-bold text-xl md:text-2xl hover:bg-green-600 transition duration-300 shadow-xl transform hover:scale-105 animate-pop-in delay-400">
+                    Solicitar Cotação Agora!
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark-bg text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-12 mb-8 border-b border-gray-700 pb-8">
+                <div class="md:w-1/3 text-center md:text-left mb-6 md:mb-0">
+                    <img src="https://placehold.co/150x50/007bff/ffffff?text=iaconvert+Logo" alt="Logotipo iaconvert" class="max-w-[150px] h-auto rounded-lg mx-auto md:mx-0 mb-4">
+                    <p class="text-sm">Sua parceira estratégica em Inteligência Artificial.</p>
+                </div>
+                
+                <div class="md:w-1/3 text-center md:text-left mb-6 md:mb-0">
+                    <h4 class="text-primary text-lg font-bold mb-4">Navegação Rápida</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#hero" class="hover:text-primary transition duration-200">Início</a></li>
+                        <li><a href="#benefits" class="hover:text-primary transition duration-200">Benefícios</a></li>
+                        <li><a href="#methodology" class="hover:text-primary transition duration-200">Metodologia</a></li>
+                        <li><a href="#ai-course-generator" class="hover:text-primary transition duration-200">Gerador de Tópicos ✨</a></li>
+                        <!-- Removida a seção de depoimentos -->
+                        <li><a href="#achievements" class="hover:text-primary transition duration-200">Por que a iaconvert?</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/3 text-center md:text-left">
+                    <h4 class="text-primary text-lg font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li><i class="fas fa-envelope mr-2 text-primary"></i> contato@iaconvert.com</li>
+                        <li><i class="fas fa-phone mr-2 text-primary"></i> (XX) XXXX-XXXX</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 text-primary"></i> [Seu Endereço da iaconvert, se houver]</li>
+                    </ul>
+                    <h4 class="text-primary text-lg font-bold mb-4">Siga-nos</h4>
+                    <div class="flex justify-center md:justify-start space-x-6">
+                        <a href="https://linkedin.com/sua-empresa" target="_blank" aria-label="LinkedIn" class="text-gray-400 hover:text-primary transition duration-300 text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://facebook.com/sua-empresa" target="_blank" aria-label="Facebook" class="text-gray-400 hover:text-primary transition duration-300 text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/sua-empresa" target="_blank" aria-label="Instagram" class="text-gray-400 hover:text-primary transition duration-300 text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <!-- Adicione mais ícones de redes sociais conforme necessário -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center text-sm">
+                <p class="mb-2">&copy; 2025 iaconvert. Todos os direitos reservados.</p>
+                <a href="#" class="text-gray-500 hover:text-primary transition duration-200">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animações CSS com @keyframes (para um toque extra de "linda") -->
+    <style>
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .animate-fade-in-down { animation: fadeInDown 0.8s ease-out forwards; }
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+        .animate-fade-in-left { animation: fadeInLeft 0.8s ease-out forwards; }
+        .animate-fade-in-right { animation: fadeInRight 0.8s ease-out forwards; }
+        .animate-pop-in { animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; }
+
+        /* Atrasos nas animações */
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+
+        /* Ocultar scrollbar no Webkit, mas manter funcionalidade */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+
+    <script>
+        // JavaScript para rolagem suave ao clicar nos links de navegação e CTAs
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Adicionar classes de animação após o carregamento para melhor performance visual
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('section').forEach((section, index) => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.querySelectorAll('.animate-fade-in-down, .animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right, .animate-pop-in').forEach(el => {
+                                el.style.opacity = '0'; // Garante que começa invisível antes da animação
+                                el.style.animationPlayState = 'running';
+                            });
+                            observer.unobserve(entry.target); // Para de observar uma vez que a animação é ativada
+                        }
+                    });
+                }, { threshold: 0.1 }); // Dispara quando 10% da seção está visível
+
+                observer.observe(section);
+            });
+        });
+
+        // Gemini API Integration - AI Course Content Generator
+        document.getElementById('generate-topics-btn').addEventListener('click', async () => {
+            const industry = document.getElementById('industry-input').value;
+            const challenge = document.getElementById('challenge-input').value;
+            const responseContainer = document.getElementById('response-container');
+            const aiResponseDiv = document.getElementById('ai-response');
+            const loadingSpinner = document.getElementById('loading-spinner');
+            const errorMessage = document.getElementById('error-message');
+
+            // Reset UI
+            aiResponseDiv.innerHTML = '';
+            responseContainer.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            loadingSpinner.classList.remove('hidden'); // Show loading spinner
+
+            if (!industry || !challenge) {
+                aiResponseDiv.innerHTML = '<p class="text-red-400">Por favor, preencha a indústria e o desafio para gerar os tópicos.</p>';
+                responseContainer.classList.remove('hidden');
+                loadingSpinner.classList.add('hidden');
+                return;
+            }
+
+            const prompt = `Você é um especialista em educação corporativa de IA. Dada a indústria '${industry}' e o desafio '${challenge}', sugira 3 a 5 tópicos ou módulos de treinamento em IA que seriam mais relevantes para uma imersão presencial, focada em aplicação prática e resultados. Formate a resposta como uma lista numerada, sem introduções ou conclusões adicionais.`;
+
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+            const payload = { contents: chatHistory };
+
+            // API key is left as an empty string. Canvas will automatically provide it at runtime.
+            const apiKey = "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    aiResponseDiv.innerHTML = text.split('\n').map(item => `<p>${item}</p>`).join('');
+                    responseContainer.classList.remove('hidden');
+                } else {
+                    errorMessage.classList.remove('hidden');
+                    console.error("Estrutura de resposta inesperada da API Gemini:", result);
+                }
+            } catch (error) {
+                errorMessage.classList.remove('hidden');
+                console.error("Erro ao chamar a API Gemini:", error);
+            } finally {
+                loadingSpinner.classList.add('hidden'); // Hide loading spinner
+            }
+        });
+    </script>
+</body>
+</html>
